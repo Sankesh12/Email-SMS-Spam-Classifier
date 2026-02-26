@@ -7,7 +7,7 @@
 ## 🚀 Project Overview
 
 - This project uses **Natural Language Processing (NLP)** and **Machine Learning** techniques to detect spam messages.  
-The model is trained on a labeled SMS dataset and deployed using Streamlit.
+- The model is trained on a labeled SMS dataset and deployed using Streamlit.
 
 ---
 
