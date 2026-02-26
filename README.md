@@ -1,12 +1,12 @@
 # 📧 Email / SMS Spam Classifier
 
-A Machine Learning based web application that classifies Email or SMS messages as **Spam** or **Not Spam**.
+- A Machine Learning based web application that classifies Email or SMS messages as **Spam** or **Not Spam**.
 
 ---
 
 ## 🚀 Project Overview
 
-This project uses Natural Language Processing (NLP) and Machine Learning techniques to detect spam messages.  
+- This project uses **Natural Language Processing (NLP)** and **Machine Learning** techniques to detect spam messages.  
 The model is trained on a labeled SMS dataset and deployed using Streamlit.
 
 ---
