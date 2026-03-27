@@ -11,13 +11,11 @@ nltk.download('stopwords')
 ps = PorterStemmer()
 stop_words = set(stopwords.words('english'))
 
-# -----------------------------
 # Text Preprocessing Function
-# -----------------------------
 def transform_text(text):
     text = text.lower()
-    text = text.split()   # ✅ simple split instead of nltk tokenizer
-
+    text = text.split()  
+    
     filtered_words = []
 
     for word in text:
@@ -27,15 +25,18 @@ def transform_text(text):
 
     return " ".join(filtered_words)
 
-# -----------------------------
 # Load Model & Vectorizer
-# -----------------------------
 tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
 model = pickle.load(open('model.pkl', 'rb'))
 
-# -----------------------------
+
 # Streamlit UI
-# -----------------------------
+st.set_page_config(
+    page_title="Email/SMS Spam Classifier",
+    page_icon="📩",
+    layout="centered"
+)
+
 st.title("📩 Email/SMS Spam Classifier")
 
 input_sms = st.text_area("Enter the message")
